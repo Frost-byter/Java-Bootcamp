@@ -1,6 +1,6 @@
 package Week2;
 
-public class Day2 {
+public class Day2_Overloading_Methods {
 
     public static void main(String[] args){
         System.out.println("Day2, All about overloading");

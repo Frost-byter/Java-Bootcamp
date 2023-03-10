@@ -2,7 +2,7 @@ package Week2;
 
 import java.util.Scanner;
 
-public class Day3 {
+public class Day3_Arrays {
 
     public static void main(String[] args) {
         //arrays are a collection of anything
@@ -10,7 +10,7 @@ public class Day3 {
 
 
 
-        //can define an array with an array literal
+        //can define an array with an array literal-[]
         //intiliazes the array and declares it
         String[] cookies = {"Chocolate Chip", "Oatmeal", "Sugar", "Snickerdoodle"};
 

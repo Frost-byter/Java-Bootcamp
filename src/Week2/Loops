@@ -65,7 +65,7 @@ Strings[] birds = {"duck", "duck", "goose",
 
  Repeats a block of code for each element in a collection
 
- Also know as for-each loop
+ Also known as for-each loop
 
  Pro: useful when you do not need the index
 
