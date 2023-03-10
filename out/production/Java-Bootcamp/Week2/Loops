@@ -1,0 +1,82 @@
+While loop Structure:
+
+int i = 0;
+
+While(i < 3) {
+System.out.println(i);
+i++;
+
+1. Initializer: (int i = 0);
+2. Condition : (i < 3);
+3. Increment/Decrement(counter) : i++;
+
+
+*********************************************************************
+Do-while loop:
+Runs a block of code then repeats while a condition is true
+Always runs at least once
+checks the condition after it runs
+
+Ex. Do{Something} while(condition);
+
+Strings[] birds = {"duck", "duck", "goose",
+                    "duck", "duck", "duck"};
+ int i = 0;
+ do {
+        System.out.println(birds[i]);
+        i++;
+        } while (i < birds.length && !birds[i-1].equals("goose"));
+
+        *****Like while loops, if the conditions is always true, the loop never ends
+ *********************************************************************
+ For loop:
+ Repeats a block of code for a set number of iterations
+ Anything you can do with a while loop, can be done with a for loop
+ both while and for loops check the condition before they run
+
+ For loop  notation:
+               for (int i = 0; i < 3; i++) {
+                     System.out.println(i);
+                     }
+ 1. the initializer : int i = 0
+ 2. Test Condition : i < 3
+ 3. Increment/decrement(Counter) :  i++
+ ******************************************************************
+ for loop notation variations:
+
+ ex 1. for (int x = 0, y = 10; x < y; x++, y--) {}
+
+ ex 2. int x;
+        for (x = 0; x < 3; x++) {}
+
+ ex 3.  int y = 3;
+        for (; y > 0; y--) {} ****All 3 parts of the for-loop are optional but the ;; are required
+
+  ex 4. for (; ;) {} // *Compiles but infinite loop*
+
+  *******************************************************************
+
+
+ 1. local variables do not exist outside of the body of the loop
+
+ *********************************************************************
+
+ Enhanced for loop(for-each)
+
+ Repeats a block of code for each element in a collection
+
+ Also known as for-each loop
+
+ Pro: useful when you do not need the index
+
+ con: you cannot update the elements
+
+ int[] nums = {1, 2, 3};
+
+ for (int i : nums) {****** unlike a for-loop "i" must be declared inside the loop notation *****
+ i++ *** Local variable contains a copy of the value in the array ***
+ }
+
+ for (int n : nums) {
+ System.out.println(n);
+ }

@@ -1,0 +1,55 @@
+package Week1;
+
+import java.util.Scanner;
+
+public class passfailcalculator {
+	
+	public static void main(String[] args) {
+
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("What's your grade?: ");
+		
+		String grade = in.nextLine();
+		
+		if (grade.equalsIgnoreCase("70")) {
+			
+			System.out.println("Congratulations, you passed!!");
+			} else { 
+				System.out.print("You failed, please try again");
+			
+			
+	}
+	
+	
+		System.out.println("Would you like to know your letter grade?");
+		
+		String lettergrade = in.nextLine();
+		
+		
+		if (lettergrade.equalsIgnoreCase("yes")) {
+		
+			System.out.println("What's your grade?: ")
+			
+			if grade.equalsIgnoreCase(int );
+		}
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}	
+}
