@@ -1,0 +1,90 @@
+public class RPGTest {
+
+
+ public static void main(String[] args) {
+
+ Hero myPlayer = new Hero(20);
+ Monster myMonster = new Monster(100, 5);
+
+ System.out.println(myPlayer);
+ System.out.println(myMonster);
+
+ myPlayer.attack(myMonster);
+ System.out.println(myMonster);
+
+ myPlayer.setWeaponQuality(10);
+
+ myPlayer.attack(myMonster);
+ System.out.println(myMonster);
+ }
+}
+
+
+
+class Hero {
+
+ private int strength;
+ private int weaponQuality = 0;
+
+ public Hero(int strength) {
+ this.strength = strength;
+ }
+
+ public void setWeaponQuality(int newQuality) {
+this.weaponQuality = newQuality;
+ }
+
+public void attack(Monster monster) {
+ monster.setHealth(monster.getHealth() - this.strength - this.weaponQuality + monster.getDefense());
+ }
+
+ @Override
+ public String toString() {
+ return "Player [strength=" + strength + "]";
+}
+}
+
+
+
+class Monster {
+
+ private int health;
+ private int defense;
+
+ public Monster(int health, int defense) {
+ this.health = health;
+ this.defense = defense;
+ }
+
+ public int getHealth() {
+ return health;
+ }
+
+
+
+ public void setHealth(int health) {
+ this.health = health;
+ }
+
+
+
+ public int getDefense() {
+ return defense;
+ }
+
+
+
+ public void setDefense(int defense) {
+ this.defense = defense;
+ }
+
+
+
+ @Override
+ //don't have to use square brackets, can format this part however I want
+ //toString method - to change the default toString method of all objects I create so it doesn't print the memory address
+ // and instead prints out the intended values when using System.out.println():
+ public String toString() {
+ return "Monster [health=" + health + ", defense=" + defense + "]";
+ }
+}
